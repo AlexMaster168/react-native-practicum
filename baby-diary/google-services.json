@@ -1,0 +1,40 @@
+{
+    "project_info": {
+      "project_number": "986692259460",
+      "firebase_url": "https://babydiary-42798-default-rtdb.firebaseio.com",
+      "project_id": "babydiary-42798",
+      "storage_bucket": "babydiary-42798.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:986692259460:android:fae10f39809cc41077fcd1",
+          "android_client_info": {
+            "package_name": "sleep.children.dream.baby.diary.babyDiary.night"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "986692259460-11i6hiu5nrpodal0ip47sqr7d0g99d2h.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyBUz2FB9yrF6pQlJ8ewWSfI0n6Daf9AuKc"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "986692259460-11i6hiu5nrpodal0ip47sqr7d0g99d2h.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }

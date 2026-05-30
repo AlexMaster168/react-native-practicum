@@ -1,0 +1,21 @@
+# Что НЕ загружать в облачную сборку EAS.
+# ВАЖНО: при наличии .easignore EAS использует ЕГО вместо .gitignore.
+# google-services.json здесь НЕ указан намеренно — он gitignored, но НУЖЕН
+# для android-сборки (firebase / google-mobile-ads), поэтому в EAS попадёт.
+
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+android/
+ios/
+.git/
+
+# Логи и бэкапы
+*.log
+*.bak
+
+# Keystore/service-key для development build не нужны (EAS генерит свой debug keystore).
+# Нужны только для production submit.
+credentials/

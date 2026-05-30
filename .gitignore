@@ -1,0 +1,76 @@
+# === react-native-old monorepo ===
+# Корневой .gitignore. У каждого проекта есть свой вложенный .gitignore
+# для специфики (android/ios и т.п.) — здесь только общие и критичные правила.
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Expo / Metro / native build artifacts
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.jsbundle
+android/
+ios/
+.gradle/
+*.apk
+*.aab
+*.ipa
+
+# === СЕКРЕТЫ И КРЕДЕНШЕЛЫ (репо приватный, но всё чувствительное — вне git) ===
+# Папки с креденшелами целиком
+**/credentials/
+**/serviceKey/
+**/secrets/
+
+# Ключи подписи / сертификаты
+*.keystore
+!debug.keystore          # debug-keystore не секрет, нужен для локальной сборки
+*.jks
+*.p8
+*.p12
+*.pfx
+*.key
+*.pem
+*.cer
+*.der
+*.mobileprovision
+*.provisionprofile
+*.certSigningRequest
+
+# Service-account / сервисные JSON-ключи (Google Play, Firebase Admin и т.п.)
+**/serviceAccount*.json
+**/*-service-account*.json
+**/pc-api-*.json
+
+# Переменные окружения
+.env
+.env.*
+!.env.example
+
+# google-services.json / GoogleService-Info.plist — НЕ игнорим осознанно:
+#   нужны EAS-сборке (android.googleServicesFile в app.json), а API-ключ внутри
+#   ограничен package name + подписью и всё равно лежит в любом распакованном APK.
+#   Те же ключи продублированы в src/firebase — прятать только файл смысла нет.
+#   Хочешь строгости — вынеси в EAS File Env Vars и раскомментируй строки ниже:
+# **/google-services.json
+# **/GoogleService-Info.plist
+
+# === Claude Code — локальные артефакты, в репо не нужны ===
+.claude/
+CLAUDE.local.md
+
+# Logs
+*.log
+npm-debug.*
+yarn-error.log
+yarn-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.bak
+*.orig
+*.tmp

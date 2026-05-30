@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Дневник малыша: дневник сна",
+    "slug": "BabyDiaryDreamsSleep",
+    "version": "1.4.8",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/adaptive-icon.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "userInterfaceStyle": "automatic",
+      "buildNumber": "1",
+      "supportsTablet": true,
+      "bundleIdentifier": "sleep.children.dream.baby.diary.babyDiary.night"
+    },
+    "android": {
+      "versionCode": 4,
+      "package": "sleep.children.dream.baby.diary.babyDiary.night",
+      "userInterfaceStyle": "automatic",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-font",
+      "expo-status-bar",
+      "expo-sharing",
+      "@react-native-community/datetimepicker",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-8936705114042872~2234507758",
+          "iosAppId": "ca-app-pub-8936705114042872~2374108558"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4d3c19f1-c199-4b86-a758-cdc6b6257a90"
+      }
+    },
+    "owner": "alexmaster168"
+  }
+}

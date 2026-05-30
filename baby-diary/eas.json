@@ -1,0 +1,37 @@
+{
+  "cli": {
+    "version": ">= 1.2.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "distribution": "internal"
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./credentials/serviceKey/pc-api-7797323138930121651-305-bc6f0e48390d.json"
+      },
+      "ios": {
+        "appleId": "romanroutecoaster@zohomail.eu",
+        "ascAppId": "1636333703",
+        "appleTeamId": "73YK262484"
+      }
+    }
+  }
+}
